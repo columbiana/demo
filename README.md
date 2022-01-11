@@ -4,4 +4,4 @@ This is simple readme project
 
 #New Header
 
-Sada je ovo update grana
+Ove se desava na MAster grani
