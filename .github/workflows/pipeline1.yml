@@ -12,7 +12,6 @@ jobs:
         with:
           node-version: 16
       - run: npm install
-      - run: npm test
 
   clean:
     runs-on: ubuntu-20.04
