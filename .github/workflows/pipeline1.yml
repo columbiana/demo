@@ -14,9 +14,10 @@ jobs:
       - run: npm install
 
   deploy:
+      name: Deploy
       runs-on: ubuntu-20.04
       steps:
-        name: Start scripts
+      - name: Start script
         uses: columbiana/ssh-action@master
         with:
           host: 159.89.11.230
