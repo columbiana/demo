@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Start scripts
-        run: ./.github/scripts/clean.sh
+        run: ./.github/scripts/deploy.sh
         shell: bash
     
 
