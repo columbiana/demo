@@ -18,13 +18,14 @@ jobs:
       runs-on: ubuntu-20.04
       steps:
       - name: Start script
-        uses: actions/checkout@v3
-        with:
-          host: 159.89.11.230
-          sername: root
-          key: ${{ secrets.SECRET_KEY }}
-          port: 22        
-          scripts: ls /home
+        run: ls
+#        uses: actions/checkout@v3
+#        with:
+#          host: 159.89.11.230
+#          sername: root
+#          key: ${{ secrets.SECRET_KEY }}
+#          port: 22        
+#          scripts: ls /home
 #        - run: sh ./deploy.sh     
 
 
