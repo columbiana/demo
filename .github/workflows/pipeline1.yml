@@ -14,14 +14,16 @@ jobs:
       - run: npm install
 
   deploy:
-      - name: Start scripts
-      - uses: actions/ssh-key-action@v2
-        with:
-          host: 159.89.11.230
-          username: root
-          key: ${{ secrets.SECRET_KEY }}
-          port: 22        
-          script: sh deploy.sh  
+      runs-on: ubuntu-20.04
+      steps:
+        - name: Start scripts
+        - uses: actions/ssh-key-action@v2
+          with:
+            host: 159.89.11.230
+            username: root
+            key: ${{ secrets.SECRET_KEY }}
+            port: 22        
+            script: sh deploy.sh  
         
     
 
