@@ -18,7 +18,7 @@ jobs:
       runs-on: ubuntu-20.04
       steps:
       - name: Start script
-      - run:  bash ${GITHUB_WORKSPACE}/deploy.sh
+        run: bash ${GITHUB_WORKSPACE}/deploy.sh
 #        uses: actions/checkout@v3
 #        with:
 #          host: 159.89.11.230
