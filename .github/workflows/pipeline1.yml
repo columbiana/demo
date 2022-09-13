@@ -4,13 +4,6 @@
 name: Node.js projects
 on: [push]
 jobs:
-  clean:
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Start scripts
-        run: ./.github/scripts/clean.sh
-        shell: bash
-  
   build:
     runs-on: ubuntu-20.04
     steps:
@@ -20,6 +13,13 @@ jobs:
           node-version: 16
       - run: npm install
       - run: npm test
+
+  clean:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Start scripts
+        run: ./.github/scripts/clean.sh
+        shell: bash
     
 
 
