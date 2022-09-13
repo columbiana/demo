@@ -14,16 +14,11 @@ jobs:
       - run: npm install
 
   deploy:
-      name: Deploy
-      runs-on: ubuntu-20.04
-      steps:
-      - name: Start script
-        uses: actions/checkout@v3
-        with:
-          host: 159.89.11.230
-          sername: root
-          key: ${{ secrets.SECRET_KEY }}
-          port: 22        
-          script: ls    
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Start scripts
+        run: sh ./home/test/demo/deploy.sh  
+        
+    
 
 
