@@ -18,7 +18,7 @@ jobs:
       runs-on: ubuntu-20.04
       steps:
       - name: Start script
-        uses: columbiana/ssh-action@master
+        uses: columbiana/demo/ssh-action@master
         with:
           host: 159.89.11.230
           sername: root
