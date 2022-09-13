@@ -18,12 +18,12 @@ jobs:
     steps:
       - name: Start scripts
       - uses: ssh-action@master
-          with:
-            host: 159.89.11.230
-            username: root
-            key: ${{ secrets.SECRET_KEY }}
-            port: 22        
-            script: sh deploy.sh  
+        with:
+          host: 159.89.11.230
+          username: root
+          key: ${{ secrets.SECRET_KEY }}
+          port: 22        
+          script: sh deploy.sh  
         
     
 
