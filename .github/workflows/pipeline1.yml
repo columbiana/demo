@@ -17,7 +17,11 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Start scripts
-        run: sh ./deploy.sh
+        run: |
+          chmod +x ./deploy
+          ./ deploy
+        shell: bash
+  
         
     
 
