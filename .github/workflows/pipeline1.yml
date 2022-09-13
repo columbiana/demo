@@ -13,7 +13,7 @@ jobs:
           node-version: 16
       - run: npm install
 
-  clean:
+  deploy:
     runs-on: ubuntu-20.04
     steps:
       - name: Start scripts
